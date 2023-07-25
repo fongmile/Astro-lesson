@@ -1,0 +1,21 @@
+---
+import FooterLinks from './FooterLinks.astro';
+
+const thisYear = new Date().getFullYear();
+---
+
+<footer>
+	<nav>
+		<FooterLinks displayText="IG" url="https://www.instagram.com" />
+		<FooterLinks displayText="YouTube" url="https://www.youtube.com" />
+	</nav>
+	@<a href="https://www.google.com">{thisYear}</a>
+</footer>
+
+<style>
+	a {color:#000; text-decoration: none; font-weight: bold;}
+</style>
+
+<script>
+	import "../scripts/menu.js";
+</script>
